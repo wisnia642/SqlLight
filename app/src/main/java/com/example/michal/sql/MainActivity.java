@@ -47,9 +47,9 @@ public class MainActivity extends ActionBarActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
         StrictMode.setThreadPolicy(policy);
-
+        //siema ciekawe czy  to zobaczysz
         try {
-            Class.forName("com.mysql.jd,kn.njbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             responseTextView.setText(""+e);
             return;
