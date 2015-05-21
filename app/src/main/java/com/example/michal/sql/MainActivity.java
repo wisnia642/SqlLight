@@ -49,7 +49,7 @@ public class MainActivity extends ActionBarActivity {
         StrictMode.setThreadPolicy(policy);
 
         try {
-            Class.forName("com.mysql.jdfddbc.Driver");
+            Class.forName("com.mysql.jd,kn.njbc.Driver");
         } catch (ClassNotFoundException e) {
             responseTextView.setText(""+e);
             return;
